@@ -4,7 +4,8 @@
             <mat-icon>filter_list</mat-icon>
         </button>
 
-        <input type="text" placeholder="Buscar producto" style="padding: 0.5rem;">
+        <input type="text" placeholder="Buscar producto" style="padding: 0.5rem;" 
+       (input)="onSearchInput($event)">
     </div>
 
     <button type="button" mat-flat-button (click)="openProductDlg()">
